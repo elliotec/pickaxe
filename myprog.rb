@@ -1,9 +1,7 @@
-puts "Hello, Ruby Programmer"
-puts "The time is #{Time.now}"
+a = [ 1, 'cat', 3.14 ]
+puts "The first element is  #{a[0]}"
+a[2] = nil
+puts "The array is now #{a.inspect}"
 
-def say_goodnight(name)
-  "Goodnight, #{name.capitalize}"
-end
-
-puts say_goodnight("ma")
-puts say_goodnight("uncle")
+b = %w[ bee dog cat happy]
+puts "#{b}"
