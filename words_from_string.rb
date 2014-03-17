@@ -3,14 +3,14 @@ def words_from_string(string)
 end
 
 def count_frequency(word_list)
-  counts = Hash.new[0]
+  counts = Hash.new(0)
   for word in word_list
     counts[word] += 1
   end
   counts
 end
 
-p words_from_string("But I didn't inhale, he said (emphatically)")
+
 raw_text = File.read("para.txt")
 word_list = words_from_string(raw_text)
 counts = count_frequency(word_list)
