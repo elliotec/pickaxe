@@ -22,5 +22,9 @@ class Person
   def initialize(name)
     @name = name
   end
+  def to_s
+    "Person named #{@name}"
+  end
 end
-m = Person.new 
+m = Person.new("Michael")
+puts m
