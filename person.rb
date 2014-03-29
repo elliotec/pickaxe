@@ -19,4 +19,5 @@ if p1 > p2
   puts "#{p1.name}'s name > #{p2.name}'s name"
 end
 
-
+puts "Sorted list:"
+puts [p1, p2, p3].sort
